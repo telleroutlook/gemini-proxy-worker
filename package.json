@@ -1,0 +1,36 @@
+{
+  "name": "gemini-proxy-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker proxy for Google Gemini API to solve CORS issues",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail",
+    "test": "wrangler dev --test",
+    "publish": "wrangler deploy --env production"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "gemini-api",
+    "cors-proxy",
+    "ai",
+    "google-gemini"
+  ],
+  "author": "tellerlin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tellerlin/gemini-proxy-worker"
+  },
+  "bugs": {
+    "url": "https://github.com/tellerlin/gemini-proxy-worker/issues"
+  },
+  "homepage": "https://github.com/tellerlin/gemini-proxy-worker#readme",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
